@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran Pasien - SIMRS (Table Layout)</title>
+</head>
+<body>
+
+    <header>
+        <h1>RS Sehat Digital</h1>
+        <p>Sistem Informasi Manajemen Rumah Sakit</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#">Beranda</a> | 
+        <a href="#">Daftar Pasien</a> | 
+        <a href="#">Kontak</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Formulir Pasien Baru</h2>
+            
+            <form>
+                <table border="0" cellpadding="5">
+                    <tr>
+                        <td><label for="nama">Nama Lengkap</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="nama" name="nama" size="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>:</td>
+                        <td><input type="email" id="email" name="email" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tgl">Tanggal Lahir</label></td>
+                        <td>:</td>
+                        <td><input type="date" id="tgl" name="tgl"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Jenis Kelamin</label></td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" id="l" name="jk" value="L"> <label for="l">Laki-laki</label>
+                            <input type="radio" id="p" name="jk" value="P"> <label for="p">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="poli">Pilih Poli</label></td>
+                        <td>:</td>
+                        <td>
+                            <select id="poli" name="poli">
+                                <option value="">-- Pilih Poli --</option>
+                                <option value="umum">Poli Umum</option>
+                                <option value="gigi">Poli Gigi</option>
+                                <option value="anak">Poli Anak</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label for="pesan">Keluhan</label></td>
+                        <td valign="top">:</td>
+                        <td><textarea id="pesan" name="pesan" rows="4" cols="32"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <br>
+                            <button type="submit">Daftarkan Pasien</button>
+                            <button type="reset">Kosongkan Form</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Lokasi RS Kami</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.3721641947527!2d95.33882038570837!3d5.562677098178874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403713e334d845%3A0x3e919c2162ffb069!2sRSUD%20Dr.%20Zainoel%20Abidin!5e0!3m2!1sid!2sid!4v1776249405202!5m2!1sid!2sid" 
+                width="600" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen=""
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2026 RS Sehat Digital - Latihan Layout Table</p>
+    </footer>
+
+</body>
+</html>
