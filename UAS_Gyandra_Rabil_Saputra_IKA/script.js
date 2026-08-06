@@ -1,6 +1,4 @@
-// ==========================
 // Mengambil data dari URL
-// ==========================
 const params = new URLSearchParams(window.location.search);
 
 const namaKost = params.get("produk");
@@ -28,16 +26,12 @@ window.onload = function () {
    tampilRiwayat();
 };
 
-// ==========================
 // Format Rupiah
-// ==========================
 function formatHarga(angka) {
    return "Rp " + new Intl.NumberFormat("id-ID").format(angka);
 }
 
-// ==========================
 // Hitung Total
-// ==========================
 function hitungTotal() {
 
    const qty = parseInt(document.getElementById("jumlah").value) || 1;
@@ -47,9 +41,7 @@ function hitungTotal() {
    document.getElementById("total_pemesanan").innerText = formatHarga(total);
 }
 
-// ==========================
 // Pesan Kost
-// ==========================
 function pesanProduk() {
 
    event.preventDefault();
