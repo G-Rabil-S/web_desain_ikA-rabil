@@ -122,3 +122,7 @@ function tampilRiwayat() {
    });
 
 }
+
+function munculkanAlert() {
+    alert("Selamat Datang di Netkos!");
+}
